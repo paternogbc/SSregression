@@ -1,7 +1,7 @@
 ## About
 `SSregression | v1.0.0`
 
-This interactive application allows you to explore how the partition of Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
+This interactive application allows you to explore how Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
 
 Check this application online: [SSregression](https://paternogbc.shinyapps.io/SS_regression)
 
