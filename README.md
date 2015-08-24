@@ -1,7 +1,5 @@
-# SSregression
-
 # About
-SSregression | v1.0.0
+`SSregression | v1.0.0`
 
 This interactive application allows you to explore how the partition of Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
 
