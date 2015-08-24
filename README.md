@@ -3,9 +3,13 @@
 
 This interactive application allows you to explore how the partition of Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
 
+# Run this application on R Studio
+
+`runGitHub("SSregression", "paternogbc")` 
+
 
 # Want to help?
-Fork this repo and create a pull request. Please, report bugs here .
+Fork this repo and create a pull request. Please, report bugs [here](https://github.com/paternogbc/SSregression/issues).
 
 
 # License
