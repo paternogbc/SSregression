@@ -1,5 +1,6 @@
-## About
-`SSregression | v1.0.0`
+## About 
+`SSregression`
+[![GitHub version](https://badge.fury.io/gh/paternogbc%2FSSregression.svg)](http://badge.fury.io/gh/paternogbc%2FSSregression)
 
 This interactive application allows you to explore how Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
 
@@ -27,4 +28,9 @@ This software is under the public license [GPL-3.0](http://www.gnu.org/licenses/
 
 ## Author
 Gustavo Paterno | paternogc@gmail.com
+
+## Credit
+
+This application was developed with [shiny](http://shiny.rstudio.com/) in 
+[R studio](https://www.rstudio.com/).
 
