@@ -1,6 +1,7 @@
-## About 
-`SSregression`
+## About `SSregression`
+
 [![GitHub version](https://badge.fury.io/gh/paternogbc%2FSSregression.svg)](http://badge.fury.io/gh/paternogbc%2FSSregression)
+
 
 This interactive application allows you to explore how Sums of Squares are calculated in simple linear regressions. Change one of the parameters to see what happens.
 
