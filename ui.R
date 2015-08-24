@@ -98,24 +98,29 @@ body <- dashboardBody(
                        "to see what happens."),
                 br(),
                 
+                h2("Run this application localy"),
+                code("install.packages('shiny')", br(),
+                     "shiny::runGitHub('SSregression', 'paternogbc')"),
+                
+                br(),br(),
+                
                 h2("Want to help?"),
                 h4("Fork this",
-                   tags$a("repo", href = "https://github.com/paternogbc/learnStats/tree/master/apps/SS_regression"),
+                   tags$a("repo", href = "https://github.com/paternogbc/SSregression"),
                    "and create a pull request.",
                    "Please, report bugs",
-                   tags$a("here", href = "https://github.com/paternogbc/learnStats/issues"),
+                   tags$a("here", href = "https://github.com/paternogbc/SSregression/issues"),
                    "."),
                 
                 br(),
                 
                 h2("License"),
                 h4("This software is under the public license",
-                   tags$a("AGPL-3.0 license", href = "http://opensource.org/licenses/AGPL-3.0"),
+                   tags$a("GPL-3.0", href = "http://www.gnu.org/licenses/gpl-3.0.en.html"),
                    "| The", tags$em("source code")," for this application is available",
-                   tags$a("here", href = "https://github.com/paternogbc/learnStats/tree/master/apps/SS_regression"),
+                   tags$a("here", href = "https://github.com/paternogbc/SSregression"),
                    "."),
-                tags$img(height = 80, width = 80,
-                         src = "logo.png"),
+                tags$img(src = "logo.png"),
                 
                 br(),
                 
