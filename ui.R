@@ -89,44 +89,7 @@ body <- dashboardBody(
    tabItem(tabName = "about",
            fluidPage(
                box(width = 10,status = "success",
-                h2("About"),
-                h6(tags$code("SSregression | v1.0.0")),
-                h4("This interactive application allows you to explore how the",
-                       "partition of",
-                       tags$a("Sums of Squares", href = "https://en.wikipedia.org/wiki/Sum_of_squares"),
-                       "are calculated in simple linear regressions. Change one of the parameters ",
-                       "to see what happens."),
-                br(),
-                
-                h2("Run this application localy"),
-                code("install.packages('shiny')", br(),
-                     "shiny::runGitHub('SSregression', 'paternogbc')"),
-                
-                br(),br(),
-                
-                h2("Want to help?"),
-                h4("Fork this",
-                   tags$a("repo", href = "https://github.com/paternogbc/SSregression"),
-                   "and create a pull request.",
-                   "Please, report bugs",
-                   tags$a("here", href = "https://github.com/paternogbc/SSregression/issues"),
-                   "."),
-                
-                br(),
-                
-                h2("License"),
-                h4("This software is under the public license",
-                   tags$a("GPL-3.0", href = "http://www.gnu.org/licenses/gpl-3.0.en.html"),
-                   "| The", tags$em("source code")," for this application is available",
-                   tags$a("here", href = "https://github.com/paternogbc/SSregression"),
-                   "."),
-                tags$img(src = "logo.png"),
-                
-                br(),
-                
-                h2("Author"),
-                h4(tags$a("Gustavo Paterno", href = "https://github.com/paternogbc"),
-                "| paternogc@gmail.com"))
+                   shiny::includeMarkdown("README.md"))
            )
            )
            )
