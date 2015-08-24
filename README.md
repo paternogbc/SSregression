@@ -5,7 +5,7 @@ This interactive application allows you to explore how the partition of Sums of 
 
 # Run this application on R Studio
 
-To run this application localy, simple run the following code on `R` console:  
+To run this application localy, simple paste the following code on `R` console:  
 `runGitHub("SSregression", "paternogbc")` 
 
 
