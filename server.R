@@ -9,6 +9,8 @@ server <- function(input, output) {
 
  ### Saving data:
  Rawdata <- reactive({
+  input$refresh 
+     
   slope <- input$slope
   SD <- input$SD
   sample <- input$sample
@@ -36,6 +38,7 @@ server <- function(input, output) {
                     value = as.numeric(c(SST, SSA, SSE)/SST)*100)
 
  })
+
 
 
  ### First output "graphs"
@@ -139,4 +142,8 @@ server <- function(input, output) {
   type = 'histogram')
 })
 
+ntext <- eventReactive(input$refresh, {
+     
+ })
+ 
 }

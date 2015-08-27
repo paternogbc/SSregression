@@ -41,7 +41,10 @@ body <- dashboardBody(
     # Sd slider:
     sliderInput(inputId = "SD",
                label = "Standard deviation",
-               value = 3, min = 0, max = 50)),
+               value = 3, min = 0, max = 50),
+    actionButton(inputId = "refresh", label = "Refresh" , 
+                 icon = icon("fa fa-refresh"))
+    ),
 
     mainPanel(
 
