@@ -23,9 +23,11 @@ Fork this repo and create a pull request. Please, report bugs [here](https://git
 
 
 ## License
-This software is under the public license [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)
+This software is Open Source and is under the public license [GPL-3.0](http://www.gnu.org/licenses/gpl-3.0.en.html)
 
 ![logo](https://raw.githubusercontent.com/paternogbc/SSregression/master/www/logo.png) 
+
+_The OSI logo trademark is the trademark of [Open Source Initiative](http://opensource.org/)_
 
 ## Author
 Gustavo Paterno | paternogc@gmail.com
