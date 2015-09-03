@@ -42,7 +42,7 @@ body <- dashboardBody(
     sliderInput(inputId = "SD",
                label = "Standard deviation",
                value = 3, min = 0, max = 50),
-    actionButton(inputId = "refresh", label = "Refresh" , 
+    actionButton(inputId = "refresh", label = "Simulate New Data" , 
                  icon = icon("fa fa-refresh"))
     ),
 
@@ -84,11 +84,14 @@ body <- dashboardBody(
                                dataTableOutput(outputId = "data")),
             box(width = 6, solidHeader = TRUE, status = "primary",
                 title = "Data distribution",
-                plotOutput(outputId = "histogram"))
+                plotOutput(outputId = "histogram"),
+                actionButton(inputId = "refresh2", label = "Simulate New Data" , 
+                             icon = icon("fa fa-refresh")))
 
             )
             ),
 
+   # TAB 3 = About
    tabItem(tabName = "about",
            fluidPage(
                box(width = 10,status = "success",

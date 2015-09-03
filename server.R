@@ -10,11 +10,12 @@ server <- function(input, output) {
  ### Saving data:
  Rawdata <- reactive({
   input$refresh 
+  input$refresh2 
      
   slope <- input$slope
   SD <- input$SD
   sample <- input$sample
-  x <- round(1:sample + rnorm(n = sample, mean = 1, sd = 1), digits = 2)
+  x <- round(1:sample + rnorm(n = sample, mean = 1, sd = 2), digits = 2)
   y <- round(slope * (x) + rnorm(n = sample, mean = 3, sd = SD ), digits = 2)
   mod <- lm(y ~ x, data.frame(y,x))
   ypred <- predict(mod)
@@ -127,7 +128,7 @@ server <- function(input, output) {
 
  output$data <- renderDataTable(
   Rawdata()[c(1,2)], options = list(
-  searchable = FALSE, searching = FALSE, pageLength = 15))
+  searchable = FALSE, searching = FALSE, pageLength = 100))
 
  output$histogram <- renderPlot({
  d1 <- ggplot(Rawdata(), aes(y = y, x = x))+
@@ -142,8 +143,5 @@ server <- function(input, output) {
   type = 'histogram')
 })
 
-ntext <- eventReactive(input$refresh, {
-     
- })
- 
+
 }
