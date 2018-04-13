@@ -11,7 +11,12 @@ Check this application online: [SSregression](https://paternogbc.shinyapps.io/SS
 
 To run this application localy, simple paste the following code on `R` console: 
 ```{r} 
- install.packages("shiny")
+ # First install the following packages:
+ library(shiny)
+ library(shinydashboard)
+ library(ggExtra)
+ library(ggplot2)
+ ### run the application:
  shiny::runGitHub("SSregression", "paternogbc")
 ```
 
