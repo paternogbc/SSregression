@@ -9,9 +9,19 @@ Check this application online: [SSregression](https://paternogbc.shinyapps.io/SS
 
 ## Run this application on R Studio
 
+Before you run, install the following R packages:
+
+```{r} 
+install.packages(shiny)
+install.packages(ggplot2)
+install.packages(shinydashboard)
+install.packages(grid)
+install.packages(markdown)
+install.packages(ggExtra)
+```
+
 To run this application localy, simple paste the following code on `R` console: 
 ```{r} 
- install.packages("shiny")
  shiny::runGitHub("SSregression", "paternogbc")
 ```
 

@@ -122,8 +122,8 @@ server <- function(input, output) {
 
  ### Second output "SS"
  output$summary <- renderTable({
-  summary(lm(y ~ x, Rawdata()))
-
+  sm <- summary(lm(y ~ x, Rawdata()))
+  sm$coefficients
  })
 
  output$data <- renderDataTable(

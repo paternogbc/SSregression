@@ -1,5 +1,4 @@
 library(shiny);library(shinydashboard)
-
 ### Title:
 
 header <- dashboardHeader(title = "Sums of Squares")
